@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><?=Config::get('site_name')?></title>
+    <link rel="stylesheet" href="../css/main.min.css">
+    <script
+        src="https://code.jquery.com/jquery-3.1.1.js"
+        integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+        crossorigin="anonymous">
+    </script><!-- end-->
+    <script src="../js/bundle.min.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <nav class="nav">
+            <div class="nav__helper"></div>
+            <ul class="nav__list">
+                <li class="nav__list-item">
+                  <a href="/" class="nav__list-ancor">Головна</a>
+                </li>
+                <li class="nav__list-item nav__list-item_active">
+                    <a href="#" class="nav__list-ancor">Знайомство</a>
+                    <ul class="nav__dropdown">
+                        <li class="nav__dropdown-item">
+                            <a href="autodidactics.html" class="nav__dropdown-ancor">Про Автодидактику</a>
+                        </li>
+                        <li class="nav__dropdown-item">
+                            <a href="kourinsky.html" class="nav__dropdown-ancor">Про Валерія Курінського</a>
+                        </li>
+                        <li class="nav__dropdown-item">
+                            <a href="video-lectures.html" class="nav__dropdown-ancor">Відеолекції</a>
+                        </li>
+                        <li class="nav__dropdown-item">
+                            <a href="fragments.html" class="nav__dropdown-ancor">Уривки з робіт</a>
+                        </li>
+                        <li class="nav__dropdown-item">
+                            <a href="autobiography.html" class="nav__dropdown-ancor">Автобіографічна репліка</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav__list-item">
+                    <a href="#" class="nav__list-ancor">Твори</a>
+                    <ul class="nav__dropdown">
+                        <li class="nav__dropdown-item">
+                            <a href="../works/music.html" class="nav__dropdown-ancor">Музика</a>
+                        </li>
+                        <li class="nav__dropdown-item">
+                            <a href="../works/prose.html" class="nav__dropdown-ancor">Проза</a>
+                        </li>
+                        <li class="nav__dropdown-item">
+                            <a href="../works/poetry.html" class="nav__dropdown-ancor">Поезія</a>
+                        </li>
+                        <li class="nav__dropdown-item">
+                            <a href="../works/aphorisms.html" class="nav__dropdown-ancor">Афоризми</a>
+                        </li>
+                        <li class="nav__dropdown-item">
+                            <a href="../works/artworks.html" class="nav__dropdown-ancor">Малюнки</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav__list-item">
+                    <a href="../events/"  class="nav__list-ancor">Події</a>
+                </li>
+                <li class="nav__list-item">
+                    <a href="#" class="nav__list-ancor">Архів</a>
+                    <ul class="nav__dropdown">
+                        <li class="nav__dropdown-item">
+                            <a href="../archive/presentations.html" class="nav__dropdown-ancor">Виступи</a>
+                        </li>
+                        <li class="nav__dropdown-item">
+                            <a href="../archive/thoughts-theater.html" class="nav__dropdown-ancor">«Театр думки»</a>
+                        </li>
+                        <li class="nav__dropdown-item">
+                            <a href="../archive/media.html" class="nav__dropdown-ancor">Публікації у ЗМІ</a>
+                        </li>
+                        <li class="nav__dropdown-item">
+                            <a href="../archive/audio.html" class="nav__dropdown-ancor">Аудіо</a>
+                        </li>
+                        <li class="nav__dropdown-item">
+                            <a href="../archive/photo-galleries.html" class="nav__dropdown-ancor">Фотоколекції</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav__list-item_tablet nav__list-item_green">
+                    <a class="nav__list-ancor nav__list-ancor_white nav__list-ancor_diffcolor"
+                    href="../store/">Крамниця</a></li>
+            </ul>
+        </nav>
+        <div class="burger-container"><!-- hamburger menu-->
+            <div class="burger topBar">
+            </div>
+            <div class="burger btmBar"></div>
+        </div> <!-- hamburger menu-->
+    </header>
+
+    <main>
+        <section class="main article">
+
+            <h1 class="main__heading">Уривки з робіт</h1>
+
+            <article class="article__wrapper">
+
+                <h2 class="article__heading">Українська ПостПсихологічна Автодидактика</h2>
+
+                <img class="feed__book-cover feed__book-cover_right" src="../../img/store/ukr-autodidactics.jpg" alt="Назва книжки">
+
+                <p class="article__paragraph">
+                    <span class="article__text_italic">Лекція 1. Правила Автодидактики,</span> &ndash;
+                        у якій відбувається знайомство з «мовною фізкультурою» і з’ясовується,
+                        чому природі вигідно давати нам інструменти для швидкого й безболісного
+                        навчання «іноземщини».
+                </p>
+                <p class="article__paragraph">Почнімо з найголовнішого – з правил автодидактики.
+                Перше наше правило, напевне, прозвучить парадоксально: нічого не треба
+                запам’ятовувати з наміром запам’ятати. Можна було би поставити тут крапку.
+                Але пояснення мусить бути, і досить довге. Отже...</p>
+                <p class="article__paragraph">Якщо говорити про якусь квінтесенцію цієї
+                    системи, то вона полягає в тому, що ми використовуємо головним чином
+                    парадокслаьну інтенцію. Як пояснити цей термін? Замість грецького
+                    слова «парадокс» тут можна вжити інше:
+                    <span class="article__text_italic">симуляція</span>. Тоді, мабуть,
+                    і дитина зрозуміє, бо що таке симулянт, ми знаємо добре.
+                    Симуляція запам’ятовування – ось завдяки чому можна відразу встановити
+                    правильні стосунки з предметом, з об’єктом сприйняття.</p>
+
+                <a class="feed__button" href="fragments/book-template.html">Більше</a>
+
+            </article>
+
+            <article class="article__wrapper">
+
+                <h2 class="article__heading">ПостПсихологическая Автодидактика, Часть ІІ</h2>
+
+                <img class="feed__book-cover feed__book-cover_right" src="../../img/store/autodidactics2.jpg" alt="Назва книжки">
+
+                <p class="article__paragraph">
+                    <span class="article__text_italic">1. Вместо лекций.
+                    По ту сторону барьера. </span></p>
+                <p class="article__paragraph">Нужна ли бессмысленная речь? </p>
+                <p class="article__paragraph">...Есть такой малоизвестный, но интересный
+                    современный философ и теолог <span class="article__text_emphasized">Георг
+                        Штайнер</span> (однофамилец Рудольфа). В 1990 году в Мюнхене вышла
+                        его книга со знаменательным названием «Имеет ли смысл наше говорение?».
+                        Так вот, он утверждает, что бывает очень много так называемых вторичных,
+                        или второстепенных разговоров.</p>
+                <p class="article__paragraph">И когда я увидел, что вы
+                    говорите на темы отнюдь не второстепенные, – а
+                    это совершенно определенно видно по лицам, – я сразу
+                    вспомнил, что сегодня у нас начинается как бы второй цикл, тот, который я
+                    таким образом еще в своих выступлениях никогда не разрабатывал и который
+                    должен пройти под знаком невторичного, или, во всяком случае, в духе
+                    внутреннего разговора, каковой мы ведем всю жизнь сами с собой.
+                    Этот тематический цикл связан, прежде всего, с техникой перевода.
+                    Что же такое перевод?</p>
+
+                <a class="feed__button" href="fragments/book-template2.html">Більше</a>
+
+            </article>
+
+        </section>
+
+        <nav class="breadcrumbs">
+            <span class="breadcrumbs__parent">Знайомство</span>
+            <span class="breadcrumbs__current">Уривки з робіт</span>
+            <span class="breadcrumbs__next">
+                <a class="breadcrumbs__anchor breadcrumbs__anchor_bold"
+                    href="autobiography.html">Автобіографічна репліка</a>
+            </span>
+        </nav>
+
+    </main>
+
+    <footer>
+        <div class="contacts">
+            <span class="contacts__text">
+                ПостПсихологічна Лабораторія. Автодидактика. В. О. Курінський &copy; 2017
+            </span>
+            <span class="contacts__text">Тел. +38 050 683 04 49 (Леся Шаповал)</span>
+            <a href="#">
+                <img class="contacts__img" src="../../img/icons/facebook.svg" alt="fb_icon">
+            </a>
+        </div>
+        <div class="webteam">
+            <a class="webteam__link" href="#">
+                <span class="webteam__text">powered by</span>
+              wehackingyou.com
+           </a>
+        </div>
+        <a href="#" class="go-top">Вгору</a>
+    </footer>
+</body>
+</html>

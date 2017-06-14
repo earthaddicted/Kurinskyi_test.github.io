@@ -1,0 +1,34 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/roboto-regular-webfont.eot');
+    src: local('Ledger'), local('Roboto'),
+         url('../fonts/roboto-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/roboto-regular-webfont.woff2') format('woff2'),
+         url('../fonts/roboto-regular-webfont.woff') format('woff'),
+         url('../fonts/Roboto-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto Condensed';
+    src: url('../fonts/robotocondensed-regular-webfont.eot');
+    src: local('Ledger'), local('Roboto Condensed'),
+         url('../fonts/robotocondensed-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/robotocondensed-regular-webfont.woff2') format('woff2'),
+         url('../fonts/robotocondensed-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* cyrillic */
+@font-face {
+    font-family: 'Ledger';
+    src: url("../fonts/LedgerRegular/LedgerRegular.eot");
+    src: local('Ledger'), local('Ledger-Regular'),
+        url("../fonts/LedgerRegular/LedgerRegular.eot?#iefix") format("embedded-opentype"),
+        url('../fonts/LedgerCyrillic.woff2') format('woff2'),
+        url('../fonts/Ledger-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

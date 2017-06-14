@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><?=Config::get('site_name')?></title>
+    <link rel="stylesheet" href="../../css/main.min.css">
+    <script
+        src="https://code.jquery.com/jquery-3.1.1.js"
+        integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+        crossorigin="anonymous">
+    </script><!-- end-->
+    <script src="../../js/bundle.min.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <nav class="nav">
+            <div class="nav__helper"></div>
+            <ul class="nav__list">
+                <li class="nav__list-item">
+                  <a href="/" class="nav__list-ancor">Головна</a>
+                </li>
+                <li class="nav__list-item">
+                    <a href="#" class="nav__list-ancor">Знайомство</a>
+                    <ul class="nav__dropdown">
+                        <li class="nav__dropdown-item">
+                            <a href="../../welcome/autodidactics.html" class="nav__dropdown-ancor">Про Автодидактику</a>
+                        </li>
+                        <li class="nav__dropdown-item">
+                            <a href="../../welcome/kourinsky.html" class="nav__dropdown-ancor">Про Валерія Курінського</a>
+                        </li>
+                        <li class="nav__dropdown-item">
+                            <a href="../../welcome/video-lectures.html" class="nav__dropdown-ancor">Відеолекції</a>
+                        </li>
+                        <li class="nav__dropdown-item">
+                            <a href="../../welcome/fragments.html" class="nav__dropdown-ancor">Уривки з робіт</a>
+                        </li>
+                        <li class="nav__dropdown-item">
+                            <a href="../../welcome/autobiography.html" class="nav__dropdown-ancor">Автобіографічна репліка</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav__list-item">
+                    <a href="#" class="nav__list-ancor">Твори</a>
+                    <ul class="nav__dropdown">
+                        <li class="nav__dropdown-item">
+                            <a href="../music.html" class="nav__dropdown-ancor">Музика</a>
+                        </li>
+                        <li class="nav__dropdown-item">
+                            <a href="../prose.html" class="nav__dropdown-ancor">Проза</a>
+                        </li>
+                        <li class="nav__dropdown-item">
+                            <a href="../poetry.html" class="nav__dropdown-ancor">Поезія</a>
+                        </li>
+                        <li class="nav__dropdown-item">
+                            <a href="../aphorisms.html" class="nav__dropdown-ancor">Афоризми</a>
+                        </li>
+                        <li class="nav__dropdown-item">
+                            <a href="../artworks.html" class="nav__dropdown-ancor">Малюнки</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav__list-item">
+                    <a href="../../events/"  class="nav__list-ancor">Події</a>
+                </li>
+                <li class="nav__list-item nav__list-item_active">
+                    <a href="#" class="nav__list-ancor">Архів</a>
+                    <ul class="nav__dropdown">
+                        <li class="nav__dropdown-item">
+                            <a href="../../archive/presentations.html" class="nav__dropdown-ancor">Виступи</a>
+                        </li>
+                        <li class="nav__dropdown-item">
+                            <a href="../../archive/thoughts-theater.html" class="nav__dropdown-ancor">«Театр думки»</a>
+                        </li>
+                        <li class="nav__dropdown-item">
+                            <a href="../../archive/media.html" class="nav__dropdown-ancor">Публікації у ЗМІ</a>
+                        </li>
+                        <li class="nav__dropdown-item">
+                            <a href="../../archive/audio.html" class="nav__dropdown-ancor">Аудіо</a>
+                        </li>
+                        <li class="nav__dropdown-item">
+                            <a href="../../archive/photo-galleries.html" class="nav__dropdown-ancor">Фотоколекції</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav__list-item_tablet nav__list-item_green">
+                    <a class="nav__list-ancor nav__list-ancor_white nav__list-ancor_diffcolor"
+                    href="../../store/">Крамниця</a></li>
+            </ul>
+        </nav>
+        <div class="burger-container"><!-- hamburger menu-->
+            <div class="burger topBar">
+            </div>
+            <div class="burger btmBar"></div>
+        </div> <!-- hamburger menu-->
+    </header>
+
+    <main>
+        <section class="main article">
+            <h1 class="main__heading">Музика</h1>
+
+            <section>
+                <h2 class="article__lead-text">«24 каприси Паганіні. Алеаторичні
+                    філософеми»</h2>
+                <p class="article__paragraph feed__annotation_middle-size">
+                Запис концерту, що відбувся в Будинку органної музики
+                <time datetime="2001-06-11">11 червня 2001 року</time>.
+                Валерій Курінський – один із небагатьох музикантів, що виконує всі
+                24 каприси Паганіні в одному концерті. Звучить також авторська музика
+                з циклу «Алеаторичні філософеми».</p>
+                <p class="article__paragraph">
+                    <iframe class="feed__frame_standard-size" src="https://www.youtube.com/embed/D72g5n7E9mg" frameborder="0" allowfullscreen></iframe>
+                </p>
+                <p><span class="bold">Загальна тривалість</span>: 1 год 57 хв.</p>
+            </section>
+
+        </section>
+
+        <nav class="breadcrumbs">
+            <span class="breadcrumbs__parent">Твори</span>
+            <span class="breadcrumbs__parent">Музика</span>
+            <span class="breadcrumbs__current">«24 каприси Паганіні. Алеаторичні
+                філософеми»</span>
+            <span class="breadcrumbs__next">
+                <a class="breadcrumbs__anchor" href="#">Проза</a>
+            </span>
+        </nav>
+
+    </main>
+
+    <footer>
+        <div class="contacts">
+            <span class="contacts__text">
+                ПостПсихологічна Лабораторія. Автодидактика. В. О. Курінський &copy; 2017
+            </span>
+            <span class="contacts__text">Тел. +38 050 683 04 49 (Леся Шаповал)</span>
+            <a href="#">
+                <img class="contacts__img" src="img/icons/facebook.svg" alt="fb_icon">
+            </a>
+        </div>
+        <div class="webteam">
+            <a class="webteam__link" href="#">
+                <span class="webteam__text">powered by</span>
+              wehackingyou.com
+           </a>
+        </div>
+        <a href="#" class="go-top">Вгору</a>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,41 @@
+@import 'shared';
+
+@media #{$mobileCommon} {
+    @import 'mobileCommon';
+}
+
+@media #{$mobileBasic} {
+    @import 'mobileBasic';
+}
+
+@media #{$mobilePortrait} {
+    @import 'mobilePortrait';
+}
+
+@media #{$mobileLandscape} {
+    @import 'mobileLandScape';
+}
+
+@media #{$tabletPortrait} {
+    @import 'tabletPortrait';
+}
+
+@media #{$tabletMedium} {
+    @import 'tabletMedium';
+}
+
+@media #{$tabletLandscape} {
+    @import 'tabletLandScape';
+}
+
+@media #{$desktop} {
+    @import 'desktop';
+}
+
+@media #{$laptop} {
+    @import 'laptop';
+}
+
+@media #{$desktopHD} {
+    @import 'desktopHD';
+}

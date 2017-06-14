@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Адмін-панель: Додати книжку</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+
+    <main>
+        <h1 class="heading">Додати книжку</h1>
+
+        <form class="admin-form" action="#" method="post" id="addBookForm">
+
+            <!-- Назва -->
+
+            <label for="bookTitle" class="admin-form__label">Назва книжки</label>
+            <input type="text" id="bookTitle" name="bookTitle"
+                class="admin-form__input admin-form__input_text admin-form__input_long" required>
+
+            <label for="bookUrl" class="admin-form__label">Транскрипція латиницею</label>
+            <input type="text" id="bookUrl" name="bookUrl"
+                class="admin-form__input admin-form__input_text" required>
+
+            <!-- Обкладинка -->
+
+            <div class="image-load">
+                <label for="bookCover" class="admin-form__label">Обкладинка
+                    <span class="admin-form__label_small">
+                        формат файлів: jpeg, jpg
+                        width=200px
+                        height=250px</span>
+                </label>
+                <input type="file" id="bookCover" name="bookCover"
+                    class="admin-form__input admin-form__input_img"
+                    data-width="200"
+                    data-height="250"
+                    accept="image/jpg" required>
+                <div class="image-load__notify" id="for_bookCover"></div>
+                <img class="image-load__preview" src=""
+                   alt="Попередній перегляд...">
+           </div>
+
+           <!-- Анотація -->
+
+           <label for="bookAnnotation" class="admin-form__label">Анотація
+               <span class="admin-form__label_small">(до 450 знаків)</span></label>
+           <textarea id="bookAnnotation" name="bookAnnotation"
+                maxlength="450" rows="6" cols="78"
+                class="admin-form__textarea" required></textarea>
+
+            <!-- Рік видання -->
+
+            <label for="yearOfPublishing" class="admin-form__label">Рік виходу</label>
+            <input type="text" name="yearOfPublishing" id="yearOfPublishing"
+                class="admin-form__input admin-form__input_text" placeholder="1991"
+                pattern="\d{4}" required>
+
+            <!-- Скан змісту -->
+            <label for="content" class="admin-form__label">Скан змісту</label>
+            <input type="file" name="content" id="content"
+                class="admin-form__input admin-form__input_file"
+                accept="application/pdf" required>
+
+            <!-- Формати й вартість -->
+
+            <fieldset class="admin-form__fieldset">
+                <legend class="admin-form__legend">Доступні формати: </legend>
+                <label for="paperback">Паперовий</label>
+                <input type="checkbox" id="paperback" name="paperback">
+                <label for="paperback">Електронний</label>
+                <input type="checkbox" id="digital" name="digital">
+
+                <label for="paperbackPrice"
+                    class="admin-form__label_small admin-form__label_hidden">
+                    Ціна паперового видання</label>
+                <input type="text" id="paperbackPrice" name="paperbackPrice"
+                    class="admin-form__input" hidden>
+
+                <label for="digitalPrice"
+                    class="admin-form__label_small admin-form__label_hidden">
+                    Ціна електронного видання</label>
+                <input type="text" id="digitalPrice" name="digitalPrice"
+                    class="admin-form__input" hidden>
+
+            </fieldset>
+
+            <!-- Де відображати? -->
+
+            <label class="admin-form__label">Де відображати?</label>
+            <select name="pageAssociated" id="pageAssociated"
+                class="admin-form__select" required>
+                <option value="fragments">«Знайомство» &gt; «Уривки з робіт»</option>
+                <option value="prose">«Твори» &gt; «Проза»</option>
+                <option value="sonnets">«Твори» &gt; «Поезія» &gt; «Сонети»</option>
+                <option value="aphorisms">«Твори» &gt; «Поезія» &gt; «Афоризми»</option>
+            </select>
+
+            <!-- Текст -->
+
+            <label for="title" class="admin-form__label">Назва вірша</label>
+            <input type="text" name="title" id="title"
+                class="sonnets admin-form__input admin-form__input_text admin-form__input_long">
+
+            <fieldset class="admin-form__editor editor">
+
+                <legend class="admin-form__legend">Перший уривок</legend>
+
+                    <input class="editor__control" type="button" form="form_editor"
+                                onclick="paragraph()" value="<p>">
+                    <input class="editor__control" type="button" form="form_editor"
+                                onclick="bold()" value="<b>">
+                    <input class="editor__control" type="button" form="form_editor"
+                                onclick="italic()" value="<i>">
+                    <input class="editor__control" type="button" form="form_editor"
+                                onclick="heading()" value="<h>">
+                    <input class="editor__control" type="button" form="form_editor"
+                                onclick="link()" value="<a>">
+                    <input class="editor__control" type="button" form="form_editor"
+                                onclick="link_inNewWindow()" value="<a> &#8594;">
+                    <input class="editor__control" type="button" form="form_editor"
+                                onclick="removeLink()" value="del <a>">
+                    <input class="editor__control" type="button" form="form_editor"
+                                onclick="removeFormat()" value="remove format">
+
+                    <input id="html" class="editor__control" form="form_editor"
+                                type="button" value="show HTML">
+
+                    <input class="editor__control" id="save_button"
+                                form="form_editor" type="button" value="&#10004; save">
+
+                    <section contenteditable="true" class="editor__editable-area" id="editableArea">
+                    </section>
+
+                    <textarea name="main_text" class="editor__textarea" id="textArea" rows="8" cols="80"></textarea>
+            </fieldset>
+
+            <!-- Чи відображати на головній? -->
+            <input type="checkbox" id="displayOnHome" name="displayOnHome"
+                class="admin-form__checkbox">
+            <label for="displayOnHome"
+                class="admin-form__label">Чи відображати на головній сторінці?</label>
+
+
+        <!-- <form class="form_editor" action="#" method="post" id="form_editor" hidden></form> -->
+
+    <button type="submit" class="admin-form__button">Додати книжку</button>
+
+</form>
+</main>
+
+<script type="text/javascript" src="admin.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,117 @@
+// HEADER
+
+.burger-container {
+    right: 20px;
+} //burger container end
+
+
+/* ________ Store _______ */
+
+.feed__item-heading {
+    font-size: 20px;
+}
+
+/* VIDEO SECTION */
+
+.feed__book-cover {
+    margin: 10px auto
+}
+
+.video {
+    flex-direction: column;
+    align-items: center;
+    padding: 36px 0 15px;
+}
+
+.section__description {
+    font-size: 18px;
+}
+
+.box {
+    width: 65vw;
+}
+
+.box__frame {
+    width: 65vw;
+    height: 45vw;
+}
+
+.control {
+    margin-top: 15px;
+}
+
+.control__btn {
+    min-width: 40px;
+    height: 40px;
+    background-size: 69%;
+}
+
+.control__text {
+    padding: 5px;
+    font-size: 16px;
+}
+
+.control__text {
+    padding: 5px;
+    margin: 0 0 55px 5px;
+}
+
+.btn {
+    font-size: 21px;
+}
+
+.btn_red {
+    padding: 14px 58px 15px 43px;
+    background-position: 200px;
+    background-size: 10%;
+}
+
+//BOOKS SECTION
+
+.block {
+    padding: 20px 20px;
+    margin: 0 0 120px;
+}
+
+.block__img {
+    width: 26vw;
+    margin: 0 auto;
+}
+
+.block__img_hover {
+    display: none;
+}
+
+.example {
+    opacity: 1;
+    top: 105%;
+    left: 0;
+}
+
+.books {
+    margin: 30px auto 0;
+}
+
+.btn_blue {
+    padding: 15px 60px 15px 40px;
+    background-position: 227px;
+    background-size: 10%;
+}
+
+//FOOTER
+
+.contacts {
+    flex-direction: column;
+    text-align: center;
+    padding: 15px 5px;
+}
+
+.contacts__mobile {
+    display: flex;
+    flex-direction: column;
+    line-height: 24px;
+}
+
+.wrapper-wide {
+    width: 100%;
+}

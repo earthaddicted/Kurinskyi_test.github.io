@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><?=Config::get('site_name')?></title>
+    <link rel="stylesheet" href="../css/main.min.css">
+    <script
+        src="https://code.jquery.com/jquery-3.1.1.js"
+        integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+        crossorigin="anonymous">
+    </script><!-- end-->
+    <script src="../js/bundle.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <div class="nav__helper"></div>
+            <ul class="nav__list">
+                <li class="nav__list-item">
+                  <a href="/" class="nav__list-ancor">Головна</a>
+                </li>
+                <li class="nav__list-item nav__list-item_active">
+                    <a href="#" class="nav__list-ancor">Знайомство</a>
+                    <ul class="nav__dropdown">
+                        <li class="nav__dropdown-item">
+                            <a href="autodidactics.html" class="nav__dropdown-ancor">Про Автодидактику</a>
+                        </li>
+                        <li class="nav__dropdown-item">
+                            <a href="kourinsky.html" class="nav__dropdown-ancor">Про Валерія Курінського</a>
+                        </li>
+                        <li class="nav__dropdown-item">
+                            <a href="video-lectures.html" class="nav__dropdown-ancor">Відеолекції</a>
+                        </li>
+                        <li class="nav__dropdown-item">
+                            <a href="fragments.html" class="nav__dropdown-ancor">Уривки з робіт</a>
+                        </li>
+                        <li class="nav__dropdown-item">
+                            <a href="autobiography.html" class="nav__dropdown-ancor">Автобіографічна репліка</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav__list-item">
+                    <a href="#" class="nav__list-ancor">Твори</a>
+                    <ul class="nav__dropdown">
+                        <li class="nav__dropdown-item">
+                            <a href="../works/music.html" class="nav__dropdown-ancor">Музика</a>
+                        </li>
+                        <li class="nav__dropdown-item">
+                            <a href="../works/prose.html" class="nav__dropdown-ancor">Проза</a>
+                        </li>
+                        <li class="nav__dropdown-item">
+                            <a href="../works/poetry.html" class="nav__dropdown-ancor">Поезія</a>
+                        </li>
+                        <li class="nav__dropdown-item">
+                            <a href="../works/aphorisms.html" class="nav__dropdown-ancor">Афоризми</a>
+                        </li>
+                        <li class="nav__dropdown-item">
+                            <a href="../works/artworks.html" class="nav__dropdown-ancor">Малюнки</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav__list-item">
+                    <a href="../events/"  class="nav__list-ancor">Події</a>
+                </li>
+                <li class="nav__list-item">
+                    <a href="#" class="nav__list-ancor">Архів</a>
+                    <ul class="nav__dropdown">
+                        <li class="nav__dropdown-item">
+                            <a href="../archive/presentations.html" class="nav__dropdown-ancor">Виступи</a>
+                        </li>
+                        <li class="nav__dropdown-item">
+                            <a href="../archive/thoughts-theater.html" class="nav__dropdown-ancor">«Театр думки»</a>
+                        </li>
+                        <li class="nav__dropdown-item">
+                            <a href="../archive/media.html" class="nav__dropdown-ancor">Публікації у ЗМІ</a>
+                        </li>
+                        <li class="nav__dropdown-item">
+                            <a href="../archive/audio.html" class="nav__dropdown-ancor">Аудіо</a>
+                        </li>
+                        <li class="nav__dropdown-item">
+                            <a href="../archive/photo-galleries.html" class="nav__dropdown-ancor">Фотоколекції</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav__list-item_tablet nav__list-item_green">
+                    <a class="nav__list-ancor nav__list-ancor_white nav__list-ancor_diffcolor"
+                    href="../store/">Крамниця</a></li>
+            </ul>
+        </nav>
+        <div class="burger-container"><!-- hamburger menu-->
+            <div class="burger topBar">
+            </div>
+            <div class="burger btmBar"></div>
+        </div> <!-- hamburger menu-->
+    </header>
+
+    <main>
+        <section class="main article">
+            <h1 class="main__heading">Про Валерія Курінського</h1>
+
+            <p class="article__paragraph">Автор ПостПсихологічної методики самонавчання, всесвітньо відомий учений
+                <span class="article__text_emphasized">Валерій Олександрович Курінський</span> (1939&nbsp;–&nbsp;2015)
+                 читав і перекладав із
+                більш ніж 80 мов, проводив лекції, навчальні семінари та вистави
+                 «театру думки» (винайдений автором жанр) в Україні, Росії, Болгарії, Чехії,
+                Австрії та інших країнах світу. Він — педагог і вчений, прозаїк і поет,
+                художник, автор сотень симфоній та авангардних музичних мініатюр.
+                Виступав зі скрипковими та фортепіанними імпровізаціями та концертами, вів
+                майстер-класи з літературної творчості, опанування іноземних мов та ін.</p>
+
+            <p class="article__paragraph">З Валерієм Курінським співпрацювали
+                <span class="article__text_emphasized">Сергій Курдюмов</span>
+                (директор Інституту прикладної математики, Росія),
+                <span class="article__text_emphasized">Володимир Буданов</span>
+                (фізик, Інститут філософії, Росія), <span class="article__text_emphasized">Володимир
+                Партушев (соціолог, Росія)</span>, <span class="article__text_emphasized">Джеймс
+                 Роуз</span> (математик, США),
+                 <span class="article__text_emphasized">Дерм Баретт</span>
+                 (професор Гарвардського університету, вивчає явище діалектики; США),
+                 <span class="article__text_emphasized">Сет Рассел</span>
+                 (математик, фізик, працює над проблемами штучного інтелекту;
+                 Велика Британія), <span class="article__text_emphasized">Роберт Крафт</span>
+                 (лінгвіст, Австралія) та інші вчені, наукові й освітні інституції,
+                 педагоги, молоді науковці, учні.
+             </p>
+
+             <p class="article__paragraph">
+                 <a href="list-of-works.html" class="article__anchor">Перелік праць В.&nbsp;Курінського&hellip;</a>
+             </p>
+
+             <p class="article__paragraph">
+                 <a href="https://uk.wikipedia.org/wiki/%D0%9A%D1%83%D1%80%D1%96%D0%BD%D1%81%D1%8C%D0%BA%D0%B8%D0%B9_%D0%92%D0%B0%D0%BB%D0%B5%D1%80%D1%96%D0%B9_%D0%9E%D0%BB%D0%B5%D0%BA%D1%81%D0%B0%D0%BD%D0%B4%D1%80%D0%BE%D0%B2%D0%B8%D1%87"
+                 target="_blank" class="article__anchor">Стаття на Вікіпедії&hellip;</a>
+             </p>
+
+            <nav class="breadcrumbs">
+                <span class="breadcrumbs__parent">Знайомство</span>
+                <span class="breadcrumbs__current">Про Валерія Курінського</span>
+                <span class="breadcrumbs__next">
+                    <a class="breadcrumbs__anchor breadcrumbs__anchor_bold"
+                        href="video-lectures.html">Відеолекції</a>
+                </span>
+            </nav>
+
+        </section><!--/ .article -->
+    </main>
+
+    <footer>
+        <div class="contacts">
+            <span class="contacts__text">
+                ПостПсихологічна Лабораторія. Автодидактика. В. О. Курінський &copy; 2017
+            </span>
+            <span class="contacts__text">Тел. +38 050 683 04 49 (Леся Шаповал)</span>
+            <a href="#">
+                <img class="contacts__img" src="../img/icons/facebook.svg" alt="fb_icon">
+            </a>
+        </div>
+        <div class="webteam">
+            <a class="webteam__link" href="#">
+                <span class="webteam__text">powered by</span>
+              wehackingyou.com
+           </a>
+        </div>
+        <a href="#" class="go-top">Вгору</a>
+    </footer>
+</body>
+</html>

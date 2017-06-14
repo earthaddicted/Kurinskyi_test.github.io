@@ -1,0 +1,200 @@
+.nav {
+    width: 100%;
+    padding-right: 0;
+
+    &__list {
+        justify-content: space-around;
+        width: 100%;
+        margin-right: 0;
+
+        &-item {
+            margin: 0 5px;
+            padding: 0;
+
+            &_green {
+                margin-left: 0;
+            }
+        }
+    }
+
+    .fixed {
+        margin-top: 0;
+    }
+}
+
+//HEADER END
+
+// SECTION INTRODUCTION
+
+.block-postpsy {
+    width: 100%;
+}
+
+.section__introduction {
+    width: 100%;
+    padding-right: 10px;
+}
+
+.block-author {
+    width: 60vw;
+}
+
+.block-author .block-author__heading_two {
+    font-size: 32px;
+
+    &::after {
+        top: 56%;
+        left: 150px;
+    }
+}
+
+.block-author .block-author__heading_one {
+    font-size: 42px;
+}
+
+.block-author__quotation {
+    border: 0;
+}
+
+.block-author .blockquote {
+    margin-left: 0;
+}
+
+.block-image {
+    margin-left: 0;
+}
+
+.section__description_red {
+    width: 65vw;
+}
+
+.block-reviews {
+    width: 90vw;
+    margin: 0;
+}
+
+// BOOKS
+
+.wrap {
+    width: 90%;
+}
+
+.example {
+    left: 10px;
+    letter-spacing: -.8px;
+}
+
+.btn_blue {
+    padding: 15px 75px 15px 65px;
+    background-color: #65adda;
+    background-position: 300px;
+}
+
+// VIDEO
+
+.btn_red {
+    padding: 15px 84px 15px 74px;
+    background-color: #da7865;
+    background-position: 280px;
+}
+
+.box {
+    width: 25vw;
+}
+
+.box__frame {
+    width: 25vw;
+    height: 20vw;
+}
+
+/* _______ Store ______ */
+
+.filter-form {
+    width: 90%;
+}
+
+.feed {
+
+    &__rubric {
+        width: 90%;
+    }
+
+    &__item {
+        max-height: 605px;
+    }
+
+    &__annotation {
+
+        &_wide  {
+            width: 55%;
+        }
+    }
+}
+
+/* ____ Inner pages ______ */
+
+.main,
+.main__heading,
+.article,
+.article__heading,
+.breadcrumbs {
+    width: 90vw;
+}
+
+/* _____ BOOKS _____ */
+
+.example {
+    opacity: 1;
+    left: 0;
+    top: 105%;
+}
+
+.block__img {
+    width: 14vw;
+    height: 100%;
+}
+
+.block {
+    margin: 30px 10px 60px;
+    padding: 15px 35px;
+}
+
+.block__img_hover {
+    display: none;
+}
+
+/*____ VIDEO ____*/
+
+.wrapper-wide {
+    width: 90%;
+}
+
+.box {
+    width: 27vw;
+}
+
+.box__frame {
+    width: 27vw;
+    height: 21vw;
+}
+
+.control__btn {
+    min-width: 42px;
+    height: 42px;
+    background-size: 72%;
+}
+
+/* _____ Footer _____ */
+
+.contacts {
+    flex-direction: column;
+    text-align: center;
+    padding: 15px 5px;
+}
+
+.contacts__mobile {
+    display: flex;
+    flex-direction: column;
+    line-height: 24px;
+} 
+

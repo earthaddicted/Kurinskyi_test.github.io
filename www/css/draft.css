@@ -1,0 +1,88 @@
+* {
+    color: #424243;
+    font-family: sans-serif;
+}
+
+header,
+main,
+footer,
+form,
+.item-for-sale,
+.about {
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #999;
+}
+
+audio {
+    display: block;
+}
+
+img {
+    margin: 30px;
+}
+
+h3 {
+    margin-left: 20px;
+}
+
+h4 {
+    margin-top: 5px;
+}
+
+p {
+    margin: 20px;
+}
+
+details {
+    margin: 20px 0 40px;
+}
+
+.active {
+    color: #ff6950;
+    font-weight: bold;
+}
+
+.aside {
+    float: right;
+}
+
+.aside label {
+    display: block;
+}
+
+.button {
+    display: block;
+    width: 200px;
+    margin: 10px 20px 20px;
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.gallery {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.book-face {
+    margin-top: 0;
+    float: right;
+}
+
+.book-summary {
+    width: 50%;
+}
+
+.item-for-sale {
+    display: inline-block;
+    width: 40%;
+}
+
+.about {
+    display: inline-block;
+    width: 40%;
+    border-radius: 5px;
+}

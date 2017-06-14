@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title><?=Config::get('site_name')?></title>
+    <link rel="stylesheet" href="css/main.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="js/bundle.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__list-item nav__list-item_active">
+                  <a href="#" class="nav__list-ancor">Головна</a>
+                </li>
+                <li class="nav__list-item">
+                    <a href="about.php" class="nav__list-ancor">Знайомство</a>
+                    <ul class="nav__dropdown">
+                        <li class="nav__dropdown-item">
+                            <a href="about.php" class="nav__dropdown-ancor">Що таке автодидактика?</a>
+                        </li>
+                        <li class="nav__dropdown-item">
+                            <a href="#" class="nav__dropdown-ancor">З чого почати?</a>
+                        </li>
+                        <li class="nav__dropdown-item">
+                            <a href="#" class="nav__dropdown-ancor">Історія</a>
+                        </li>
+                        <li class="nav__dropdown-item">
+                            <a href="#" class="nav__dropdown-ancor">В.О.К.</a>
+                        </li>
+                        <li class="nav__dropdown-item">
+                            <a href="#" class="nav__dropdown-ancor">Роботи</a>
+                        </li>
+                        <li class="nav__dropdown-item">
+                            <a href="#" class="nav__dropdown-ancor">30 фактів</a>
+                        </li>
+                        <li class="nav__dropdown-item">
+                            <a href="#" class="nav__dropdown-ancor">Словничок</a>
+                        </li>
+                        <li class="nav__dropdown-item">
+                            <a href="#" class="nav__dropdown-ancor">Середовище</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav__list-item">
+                    <a href="#" class="nav__list-ancor">Вибране</a>
+                    <ul class="nav__dropdown">
+                        <li class="nav__dropdown-item">
+                            <a href="video-selected.php" class="nav__dropdown-ancor">Відеолекції</a>
+                        </li>
+                        <li class="nav__dropdown-item">
+                            <a href="works.php" class="nav__dropdown-ancor">Уривки з книжок</a>
+                        </li>
+                        <li class="nav__dropdown-item">
+                            <a href="#" class="nav__dropdown-ancor">“Дитячий маніфест”</a>
+                        </li>
+                        <li class="nav__dropdown-item">
+                            <a href="aphorisms.php" class="nav__dropdown-ancor">Афоризми</a>
+                        </li>
+                        <li class="nav__dropdown-item">
+                            <a href="poetry.php" class="nav__dropdown-ancor">Поезія</a>
+                        </li>
+                        <li class="nav__dropdown-item">
+                            <a href="prose.php" class="nav__dropdown-ancor">Проза</a>
+                        </li>
+                        <li class="nav__dropdown-item">
+                            <a href="music.php" class="nav__dropdown-ancor">Музика</a>
+                        </li>
+                        <li class="nav__dropdown-item">
+                            <a href="artworks.php" class="nav__dropdown-ancor">Малюнки</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav__list-item">
+                    <a href="events.php"  class="nav__list-ancor">Події</a>
+                </li>
+                <li class="nav__list-item">
+                    <a href="#" class="nav__list-ancor">Медіатека</a>
+                    <ul class="nav__dropdown">
+                        <li class="nav__dropdown-item">
+                            <a href="pictures.php" class="nav__dropdown-ancor">Фотогалереї</a>
+                        </li>
+                        <li class="nav__dropdown-item">
+                            <a href="video.php" class="nav__dropdown-ancor">Відеодобірки</a>
+                        </li>
+                        <li class="nav__dropdown-item">
+                            <a href="audio.php" class="nav__dropdown-ancor">Аудіо</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav__list-item">
+                    <a href="#"  class="nav__list-ancor">П’ятий вимір</a>
+                    <ul class="nav__dropdown">
+                        <li class="nav__dropdown-item">
+                            <a href="#" class="nav__dropdown-ancor">Legenda libri</a>
+                        </li>
+                        <li class="nav__dropdown-item">
+                            <a href="#" class="nav__dropdown-ancor">Наука</a>
+                        </li>
+                        <li class="nav__dropdown-item">
+                            <a href="#" class="nav__dropdown-ancor">Культура</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav__button"><a href="store.php">Крамниця</a></li>
+            </ul>
+        </nav>
+    </header>
+<?=$data['content']?>
+
+</html>

@@ -1,0 +1,38 @@
+.main,
+.main__heading {
+    width: 70vw;
+}
+
+.feed__button:hover,
+.pop-up__button:hover,
+.nav__list-ancor_diffcolor:hover {
+    @include order-button-hovered;
+    @include background-icons;
+}
+
+.nav__list-ancor_diffcolor:hover {
+    background-size: 170px;
+    background-position: -1px center;
+}
+
+.videos__details:hover {
+    background-color: $green-transparent;
+    border: 1px solid $green-transparent;
+    color: $white;
+    @include background-icons;
+}
+
+/*____ former inline styles for Vanilla Tilt ____ */
+
+.block {
+    transform-style: preserve-3d;
+}
+
+.block__img,
+.block__img_hover {
+    transform: translateZ(20px);
+}
+
+.example {
+    transform: translateZ(50px);
+}
